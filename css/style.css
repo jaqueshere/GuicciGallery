@@ -1,0 +1,84 @@
+body {
+	background-color: white;
+	position: relative;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+/* Styles for front splashes */
+#libai_container {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-image: url('../images/Libai_closeup1.jpg');
+	background-size: cover;
+	display: block;
+}
+
+#nightshining_container {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-image: url('../images/nightshiningwhite_detail.jpg');
+	background-size: cover;
+	display: none;
+}
+
+#gallery1 {
+	display: none;
+	position: absolute;
+	background-color:white;
+	height: 100%;
+}
+
+#gallery1 .row, .imageFrame {
+	height: 100%;
+	width:100%;
+	position:relative;
+	margin:0;
+}
+
+.painting {
+	position: absolute;
+	height:100%;
+	margin: 0 auto;
+}
+
+#portals {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+
+#dotRow {
+	position:relative;
+	width: 100%;
+	height: 10rem;
+}
+
+/* Style for the square active areas on portal page */
+.doorKnob {
+	margin:1px;
+	position: relative;
+	width:2.5rem;
+	height:2.5rem;
+	background-color: darkgray;
+	/*display: none;*/
+}
+
+@media (max-width: 400px) {
+	#spacer {
+		position: relative;
+		height:0;
+	}
+}
+
+@media (min-width: 700px) {
+	#spacer {
+		position: relative;
+		height:30rem;
+	}
+}
