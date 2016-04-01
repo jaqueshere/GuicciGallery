@@ -8,6 +8,9 @@
 	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<link rel="stylesheet" src="owlcarousel/owl.carousel.min.css">
+	<link rel="stylesheet" src="owlcarousel/owl.theme.default.min.css">
+	<script src="owlcarousel/owl.carousel.min.js"></script>
 	<script src="js/script.js"></script>
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -16,9 +19,26 @@
 	<div class="container" id="nightshining_container"></div>
 	<div class="container" id="gallery1">
 		<div class="row">
-			<div class="col-xs-12 imageFrame" id="portrait1">
-				<img src="images/portrait1.png" class="painting"></img>
+			<div class="col-xs-1">
+				<div class="owl-carousel-arrows">
+					<a class="btn btn-primary prev push-top" href="#"><</a>
+				</div>
 			</div>
+			<div class="col-xs-10" id="carousel-container">
+				<div class="owl-carousel">
+					<div id="portrait1">
+						<img src="images/portrait1.png" class="painting"></img>
+					</div>	
+					<div id="portrait2">
+						
+					</div>	
+				</div>
+			</div>
+			<div class="col-xs-1">
+				<div class="owl-carousel-arrows push-top">
+					<a class="btn btn-primary next" href="#">></a>
+				</div>
+			</div> 
 		</div>
 	</div>
 	<div class="container" id="portals">

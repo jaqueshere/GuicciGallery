@@ -40,6 +40,44 @@ body {
 	margin:0;
 }
 
+#carousel-container {
+	height:100%;
+}
+
+.owl-carousel, .owl-stage-outer, .owl-stage {
+	/*overflow:hidden;*/
+	position: relative;
+	height: 95vh;
+}
+
+.owl-item {
+	height: 100%;
+}
+
+.owl-theme .owl-controls {
+    display: inline-block;
+    /*display: inline;*/
+    font-size:1rem;
+    color: gray;
+    opacity:0.8;
+}
+
+.owl-prev, .owl-next {
+	display: inline-block;
+}
+
+.owl-carousel-arrows {
+
+}
+
+.btn {
+	background-color: white;
+	color: lightgray;
+	border: none;
+	font-size:5rem;
+	margin-top:50vh;
+}
+
 .painting {
 	position: absolute;
 	height:100%;
