@@ -27,12 +27,10 @@ $(document).ready(function() {
 	$('.owl-carousel-arrows .prev').click(function() {
 		owl.trigger('owl.prev');
 	});
-	$('#libai_container').click(function() {
-		$('#libai_container').css('display', 'none');
-		$('#nightshining_container').css('display', 'block');
-	});
-	$('#nightshining_container').click(function() {
-		$('#nightshining_container').css('display', 'none');
+	$('#gallery1').css('display', 'none'); 		/* As soon as carousel width defined, remove */
+
+	$('#newPic_container').click(function() {
+		$('#newPic_container').css('display', 'none');
 		$('#portals').css('display', 'block');
 	});
 	$('.one').click(function() {

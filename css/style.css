@@ -2,42 +2,40 @@ body {
 	background-color: white;
 	position: relative;
 	height: 100vh;
+	width:100%;
 	margin: 0;
 	padding: 0;
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 
 /* Styles for front splashes */
-#libai_container {
+
+#newPic_container {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background-image: url('../images/Libai_closeup1.jpg');
+	background-image: url('../images/2016_4_A.png');
 	background-size: cover;
 	display: block;
 }
 
-#nightshining_container {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	background-image: url('../images/nightshiningwhite_detail.jpg');
-	background-size: cover;
-	display: none;
-}
-
 #gallery1 {
-	display: none;
+	display: block;					/* loading page with this display on so width of carousel is calculated */
 	position: absolute;
 	background-color:white;
 	height: 100%;
+	width: 100%;
 }
 
-#gallery1 .row, .imageFrame {
+#gallery1 .row {
 	height: 100%;
 	width:100%;
 	position:relative;
 	margin:0;
+}
+
+.clearFloat {
+	width: 100%;
 }
 
 #carousel-container {
@@ -51,7 +49,9 @@ body {
 }
 
 .owl-item {
+	position:relative;
 	height: 100%;
+	width: 100%;
 }
 
 .owl-theme .owl-controls {
@@ -78,10 +78,18 @@ body {
 	margin-top:50vh;
 }
 
+.frame {
+	height: 100%;
+	width: auto;
+}
+
 .painting {
-	position: absolute;
+	position: relative;
 	height:100%;
-	margin: 0 auto;
+	margin: 0;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, 0);
 }
 
 #portals {
