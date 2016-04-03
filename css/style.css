@@ -52,6 +52,7 @@ body {
 	position:relative;
 	height: 100%;
 	width: 100%;
+	display: inline-block;
 }
 
 .owl-theme .owl-controls {
@@ -62,12 +63,15 @@ body {
     opacity:0.8;
 }
 
-.owl-prev, .owl-next {
+.prev, .next {
 	display: inline-block;
+	position: relative;
+	z-index: 150;
 }
 
 .owl-carousel-arrows {
-
+	position: relative;
+	z-index: 150;
 }
 
 .btn {
@@ -113,6 +117,10 @@ body {
 	height:2.5rem;
 	background-color: darkgray;
 	/*display: none;*/
+}
+
+.caption {
+	color: darkgray;
 }
 
 @media (max-width: 400px) {
