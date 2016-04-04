@@ -12,7 +12,7 @@ $(document).ready(function() {
 		$(".owl-carousel").trigger('next.owl.carousel');
 	});
 	$('.owl-carousel-arrows .prev').click(function() {
-		$(".owl-carousel").trigger('owl.carousel.prev');
+		$(".owl-carousel").trigger('prev.owl.carousel');
 	});
 
 	$('#gallery1').css('display', 'none'); 		/* As soon as carousel width defined, remove */
