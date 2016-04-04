@@ -6,7 +6,21 @@ $(document).ready(function() {
 		loop: false,
 		center: true,
 		dots: false,
-		navigation:true
+		navigation:true,
+		responsive: {
+			0: {
+				items: 1,
+				nav: true
+			},
+			600: {
+				items: 1,
+				nav: true
+			},
+			1000: {
+				items: 1,
+				nav: true
+			}
+		}
 	});
 	$('.owl-carousel-arrows .next').click(function() {
 		$(".owl-carousel").trigger('next.owl.carousel');
