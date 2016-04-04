@@ -121,14 +121,20 @@ body {
 	color: darkgray;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 800px) {
 	#spacer {
 		position: relative;
 		height:0;
 	}
+
+	.owl-carousel-arrows {
+		display: none;
+	}
 }
 
-@media (min-width: 600px) {
+
+
+@media (min-width: 800px) {
 	.painting {
 		left: 50%;
 		margin-right: -50%;
@@ -138,5 +144,9 @@ body {
 	#spacer {
 		position: relative;
 		height:30rem;
+	}
+
+	.owl-carousel-arrows {
+		display: block;
 	}
 }
