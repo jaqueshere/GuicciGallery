@@ -43,7 +43,7 @@ body {
 }
 
 .owl-carousel, .owl-stage-outer, .owl-stage {
-	/*overflow:hidden;*/
+	overflow:hidden;
 	position: relative;
 	height: 95vh;
 }
@@ -91,9 +91,7 @@ body {
 	position: relative;
 	height:100%;
 	margin: 0;
-	left: 50%;
-	margin-right: -50%;
-	transform: translate(-50%, 0);
+	
 }
 
 #portals {
@@ -130,7 +128,13 @@ body {
 	}
 }
 
-@media (min-width: 700px) {
+@media (min-width: 600px) {
+	.painting {
+		left: 50%;
+		margin-right: -50%;
+		transform: translate(-50%, 0);
+	}
+
 	#spacer {
 		position: relative;
 		height:30rem;
