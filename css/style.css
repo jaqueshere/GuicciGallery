@@ -119,9 +119,11 @@ body {
 
 .caption {
 	color: darkgray;
+	display: inline-block;
+	position: relative;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
 	#spacer {
 		position: relative;
 		height:0;
@@ -130,11 +132,21 @@ body {
 	.owl-carousel-arrows {
 		display: none;
 	}
+
+	.doorKnob {
+		margin: 15px auto;
+	}
+
+	.caption {
+		left: 50%;
+		margin-right: -50%;
+		transform: translate(-50%, 0);
+	}
 }
 
 
 
-@media (min-width: 800px) {
+@media (min-width: 768px) {
 	.painting {
 		left: 50%;
 		margin-right: -50%;
